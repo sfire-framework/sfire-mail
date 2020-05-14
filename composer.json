@@ -1,9 +1,13 @@
 {
     "name": "sfire-framework/sfire-mail",
     "description": "Simple API for sending emails, allowing you to quickly get started sending mail.",
+    "homepage": "https://sfire.io",
     "keywords": [
-        "Mail",
-        "Email"
+        "sfire",
+        "framework",
+        "smtp",
+        "mail",
+        "email"
     ],
     "license": "BSD-3-Clause",
     "authors": [
@@ -13,7 +17,8 @@
         }
     ],
     "require": {
-        "php": ">=7.4"
+        "php": ">=7.4",
+        "sfire-framework/sfire-filecontrol": "1.0.*"
     },
     "require-dev": {
         "phpunit/phpunit": "^8"
