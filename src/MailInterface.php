@@ -23,7 +23,7 @@ interface MailInterface {
      * Try to send the mail with optional callback.
      * @param callable $closure [optional]
      */
-	public function send(callable $closure = null);
+    public function send(callable $closure = null);
 
 
     /**
@@ -31,7 +31,7 @@ interface MailInterface {
      * @param string $email The email address of the receiver
      * @param string $name [optional] The name of the receiver
      */
-	public function to(string $email, ?string $name = null);
+    public function to(string $email, ?string $name = null);
 
 
     /**
@@ -39,7 +39,7 @@ interface MailInterface {
      * @param string $email The email address of the reply to
      * @param string $name [optional] The name of the reply to email address
      */
-	public function reply(string $email, ?string $name = null);
+    public function reply(string $email, ?string $name = null);
 
 
     /**
@@ -47,7 +47,7 @@ interface MailInterface {
      * @param string $email The email address of the receiver
      * @param string $name [optional] The name of the receiver
      */
-	public function bcc(string $email, ?string $name = null);
+    public function bcc(string $email, ?string $name = null);
 
 
     /**
@@ -63,7 +63,7 @@ interface MailInterface {
      * Adds subject
      * @param string $subject The subject for the mail
      */
-	public function subject(string $subject);
+    public function subject(string $subject);
 
 
     /**
@@ -71,7 +71,7 @@ interface MailInterface {
      * @param string $email The email address of the receiver
      * @param string $name [optional] The name of the receiver
      */
-	public function cc(string $email, ?string $name = null);
+    public function cc(string $email, ?string $name = null);
 
 
     /**
@@ -79,5 +79,5 @@ interface MailInterface {
      * @param string $email The email address of the sender
      * @param string $name [optional] The name of the sender
      */
-	public function from(string $email, string $name);
+    public function from(string $email, string $name);
 }
